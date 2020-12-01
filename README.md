@@ -1,6 +1,6 @@
 # Caavo
 
-This project is designed to group a numebr of users based on some criteria. An option is provided to upload user profiles and sort the user details based on their name
+This project is designed to group a numebr of users based on some criteria. An option is provided to upload user profiles and sort the user details based on their name.
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 10.0.0.
 
 ## Development server
