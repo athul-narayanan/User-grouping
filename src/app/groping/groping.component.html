@@ -1,0 +1,30 @@
+<div class="col-12 blackBackGround">
+    <div class="col-12">
+        <h4 class="centerAlign whiteFont">Create Group</h4>
+        <div class="rightAlign">
+            <label for="sortBy" class="descLabel whiteFont">Sort By Name</label>
+            <select id="sortBy" (change)="sortByName()" [(ngModel)]="sortBy">
+                <option value="asc">Ascending</option>
+                <option value="des">Descending</option>
+            </select>
+        </div>
+    </div>
+    <div class="col-11 row alignUser">
+        <div class="col-12">
+            <app-group-details>
+                
+            </app-group-details>
+        </div>
+        <div class="col-2" *ngFor="let user of userDetailsList" (click)="user.selected = !user.selected">
+          
+          <app-image-card [imageUrl] = "user.Image" [userName]="user.name" [selected]="user.selected">
+             
+          </app-image-card>
+        </div>
+      </div>
+      <div class="col-12 centerAlign marginTop">
+          <button class="updateButton">Update</button>
+          <button class="removeButton">Remove</button>
+      </div>
+</div>
+

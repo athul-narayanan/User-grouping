@@ -1,0 +1,30 @@
+<form [formGroup]="myForm" class="profilePic" >
+    
+    <div class="col-12 row">
+        <div class="col-3">
+            <img [src]="imageSrc" *ngIf="imageSrc" style="height: 160px; width:200px">
+
+            <div class="form-group">
+                <label for="file" class="docUpload whiteFont"><i class="material-icons">add_a_photo</i> Group Logo</label>
+                <input style="display: none;"
+                   formControlName="file"
+                   id="file" 
+                   type="file" 
+                   class="form-control"
+                   (change)="onFileChange($event)">
+            </div>
+        </div>
+        <div class="col-6 row">
+            <div class="col-12">
+                <label for="groupName" class="descLabel whiteFont">Name</label>
+                <input class="groupDescriptionInput" type="text" id="groupName" placeholder="group name" />
+            </div>
+            <div class="col-12">
+                <label for="groupDescription" class="descLabel whiteFont">Description</label>
+                <input class="groupDescriptionInput" type="text" id="groupDescription" placeholder="group description"/>
+            </div>
+        </div>
+    </div>
+    
+        
+</form>

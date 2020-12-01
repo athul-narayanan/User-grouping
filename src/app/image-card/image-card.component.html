@@ -1,0 +1,11 @@
+<div class="col-12 card relativePosition">
+   
+    <div class="col-12">
+        <img class='imageStyle' [src]="imageUrl" [alt]="userName" />
+    </div>
+    <div class="col-12">
+        {{userName}}
+    </div>
+
+    <input checked *ngIf="selected" id="imageCheckbox" type="checkbox" class="absolutePosition imageSelectedCheckBox">
+</div>
